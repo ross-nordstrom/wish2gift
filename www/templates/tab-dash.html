@@ -1,0 +1,42 @@
+<ion-view title="Dashboard">
+  <ion-content class="has-header padding">
+    <h1>Explore</h1>
+    <div ng-repeat="item in items" class="list card">
+
+	  <div class="item item-avatar" ng-click="item.collapsed = !item.collapsed">
+	    <img src="img/{{item.logo}}">
+	    <h2>{{item.title}}</h2>
+	    <p>
+	    	<small ng-show="item.orig" style="text-decoration:line-through;">{{item.orig}}</small>
+	    	{{item.price}} 
+	    	<small>{{item.subtitle}}</small>
+    	</p>
+	  </div>
+
+	  <div class="item item-body" ng-hide="item.collapsed">
+	    <img class="full-image" src="img/{{item.image}}">
+	    <p>{{item.details}}</p>
+	    <p>
+	      <a href="#" class="subdued">{{item.wishes}} Wishes</a>
+	      <a href="#" class="subdued">{{item.gifts}} Gifts</a>
+	    </p>
+	  </div>
+
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-plus"></i>
+	      Wish it
+	    </a>
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-bag"></i>
+	      Gift it
+	    </a>
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-share"></i>
+	      Share
+	    </a>
+	  </div>
+
+	</div>
+  </ion-content>
+</ion-view>
