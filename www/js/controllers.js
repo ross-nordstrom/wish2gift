@@ -14,6 +14,37 @@ angular.module('starter.controllers', [])
 			collapsed: true
 		},
 		{
+			logo: 'target.png',
+			title: "KitchenAid Ultra Power 4.5 Qt Stand Mixer",
+			orig: '$299.99',
+			price: '$239.99',
+			subtitle: '3-5 day shipping',
+			image: 'mixer.jpg',
+			details: "KitchenAid first sold their home mixers in 1919. Since then, KitchenAid Stand Mixers have become easier for the home chef to buy, store and use, but the reputation for sturdy construction and reliable performance has not changed. The Ultra Power Mixer has a 4.5-qt. bowl; it boasts 300 watts of power for mixing double batches.",
+			wishes: 12,
+			gifts: 2,
+			ongoing: [
+				{
+					remaining: "$39.99",
+					wisher: {
+						name: "Beyonce",
+						pic: "beyonce.jpg"
+					},
+					contributors: [
+						{
+							name: "Jay-Z",
+							pic: "jayz.jpg"
+						},
+						{
+							name: "Rihanna",
+							pic: "rihanna.jpg"
+						}
+					]
+				}
+			],
+			collapsed: true
+		},
+		{
 			logo: 'rei.jpg',
 			title: "Rossignol Soul 7 Skis - Men's -2013/2014",
 			price: '$699.95',
@@ -26,7 +57,7 @@ angular.module('starter.controllers', [])
 		},
 		{
 			logo: 'macys.png',
-			title: "",
+			title: "Material Girl Leyor Riding Boots",
 			orig: '$79.00',
 			price: '$41.47',
 			subtitle: '3-6 day shipping',

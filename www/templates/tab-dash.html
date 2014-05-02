@@ -1,4 +1,4 @@
-<ion-view title="Dashboard">
+<ion-view title="Explore">
   <ion-content class="has-header padding">
     <h1>Explore</h1>
     <div ng-repeat="item in items" class="list card">
@@ -20,6 +20,13 @@
 	      <a href="#" class="subdued">{{item.wishes}} Wishes</a>
 	      <a href="#" class="subdued">{{item.gifts}} Gifts</a>
 	    </p>
+	    <div ng-repeat="thing in item.ongoing" class="list">
+		    <a class="item item-thumbnail-left" href="#">
+		      <img src="img/{{thing.wisher.pic}}">
+		      <h2>{{thing.wisher.name}}</h2>
+		      <p>{{thing.remaining}} left ({{thing.contributors.length}} contributors <img ng-repeat="p in thing.contributors" style="max-width:40px; max-height:40px" src="img/{{p.pic}}" title="{{p.name}}">)</p>
+		    </a>
+	    </div>
 	  </div>
 
 	  <div class="item tabs tabs-secondary tabs-icon-left">
