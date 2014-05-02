@@ -1,6 +1,6 @@
 <ion-view title="Explore">
   <ion-content class="has-header padding">
-    <h1>Explore</h1>
+    <!-- <h1>Explore</h1> -->
     <div ng-repeat="item in items" class="list card">
 
 	  <div class="item item-avatar" ng-click="item.collapsed = !item.collapsed">
@@ -21,10 +21,11 @@
 	      <a href="#" class="subdued">{{item.gifts}} Gifts</a>
 	    </p>
 	    <div ng-repeat="thing in item.ongoing" class="list">
-		    <a class="item item-thumbnail-left" href="#">
+		    <a class="item item-thumbnail-left item-icon-right" href="#">
 		      <img src="img/{{thing.wisher.pic}}">
 		      <h2>{{thing.wisher.name}}</h2>
-		      <p>{{thing.remaining}} left ({{thing.contributors.length}} contributors <img ng-repeat="p in thing.contributors" style="max-width:40px; max-height:40px" src="img/{{p.pic}}" title="{{p.name}}">)</p>
+		      <p>{{thing.remaining}} left ({{thing.contributors.length}} contributors <img ng-repeat="p in thing.contributors" style="max-width:20px; max-height:20px" src="img/{{p.pic}}" title="{{p.name}}">)</p>
+	          <i class="icon ion-bag"></i>
 		    </a>
 	    </div>
 	  </div>
